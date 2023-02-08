@@ -13,8 +13,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 3
-        versionName "1.0.3"
+        versionCode 5
+        versionName "1.0.5"
         //X5兼容64位手机
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
