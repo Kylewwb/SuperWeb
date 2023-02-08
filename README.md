@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/Kylewwb/SuperWeb.svg)](https://jitpack.io/#Kylewwb/SuperWeb)
+
 ## SuperWeb 超级浏览器
 
 #### 基于腾讯X5内核
@@ -27,7 +29,8 @@ allprojects {
 
 ```Java
 dependencies {
-     implementation 'com.github.Victory-Over:SuperWeb:v1.0.2
+    implementation 'com.github.Kylewwb:SuperWeb:v1.0.6'
+    // implementation 'com.github.Victory-Over:SuperWeb:v1.0.2
 }
 ```
 
