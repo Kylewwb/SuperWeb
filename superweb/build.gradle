@@ -1,5 +1,9 @@
-apply plugin: 'com.android.library'
-apply plugin: 'maven'
+//apply plugin: 'com.android.library'
+//apply plugin: 'maven'
+plugins{
+    id 'com.android.library'
+    id 'maven-publish'
+}
 
 android {
     compileSdkVersion 26
@@ -24,14 +28,30 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
+//    publishing {//这个不能少
+//        singleVariant("release")
+//    }
 }
+
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                from components.release
+//                groupId = 'com.fanneng.android' //groupId 随便取
+//                artifactId = 'fanneng'  //artifactId 随便取
+//                version = '1.0.0'
+//            }
+//        }
+//    }
+//}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     compile "com.android.support:support-v4:26.1.0"
     compile "com.android.support:design:26.1.0"
-    compile files('libs/tbs_sdk_thirdapp_v3.6.0.1249_43610_sharewithdownload_withoutGame_obfs_20180608_114954.jar')
+//    compile files('libs/tbs_sdk_thirdapp_v3.6.0.1249_43610_sharewithdownload_withoutGame_obfs_20180608_114954.jar')
+    api 'com.tencent.tbs:tbssdk:44275'
 }
 
 //uploadArchives {
