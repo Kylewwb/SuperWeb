@@ -29,7 +29,7 @@ allprojects {
 
 ```Java
 dependencies {
-    implementation 'com.github.Kylewwb:SuperWeb:v1.0.6'
+    implementation 'com.github.Kylewwb:SuperWeb:v1.0.7'
     // implementation 'com.github.Victory-Over:SuperWeb:v1.0.2
 }
 ```
